@@ -1,0 +1,12 @@
+#include<iostream>
+using namespace std;
+ int main()
+ {
+     int a, b, mul;
+     cout<<" enter a number a \n ";
+     cin>>a;
+      cout<<" enter a number b \n ";
+     cin>>b;
+mul = (a*b);
+cout<< " multiplication of two number a and b is \n"<<mul<<endl; 
+ }
