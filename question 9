@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main()
+ {
+     int x;
+     cin>>x;
+     if(x<25){
+      cout<<"F";
+    }
+    else if((x>=25)&&(x<45)){
+      cout<<"E";
+    }
+    else if((x>=45)&&(x<50)){
+      cout<<"D";
+    }
+    else if((x>=50)&&(x<60)){
+      cout<<"C";
+    }
+    else if((x>=60)&&(x<80)){
+      cout<<"B";
+    }
+    else if((x>=80)&&(x<=100)){
+      cout<<"A";
+    }
+    else{
+      cout<<"Not correct marks";
+    }
+
+return 0;
+ }
