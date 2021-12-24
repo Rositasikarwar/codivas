@@ -1,0 +1,22 @@
+#include<iostream>
+using namespace std;
+int main()
+ {
+int serviceyear ,salary ;
+
+   cout<<"employee enter ur Salary ";
+   cin>>salary ;
+   cout<<"employee enter ur serviceyear";
+   cin>>serviceyear;
+
+   if(serviceyear>5)
+   {
+       cout<<"(Total salary)+(bonus) "<<salary*serviceyear+(salary*5/100);
+   }
+   else
+   {
+       cout<<"Total salary is "<<salary*serviceyear;
+   }
+
+return 0;
+ }
