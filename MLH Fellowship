@@ -1,19 +1,593 @@
-// #include <iostream>
-// #include <vector>
-// class Solution {
-// public:
-//     int countPrimes(int n) {
-//         int cnt = 0;
-//         vector<bool> prime(n+1, true);
-//         prime[0] = prime[1] = false;
-//         for(int i =2;i<n;i++){
-//             if(prime[i]){
-//                 cnt++;
-//                 for(int j = 2*i;j<n ;j+=i){
-//                     prime[j]=0;
-//                 }
-//             }
-//         }
-//         return cnt;
-//     }
-// };
+#include<iostream>
+using namespace std;
+int main()
+{
+    // ******** Pattern 1 *******
+    // 1 2 3 4
+    // 1 2 3 4 
+    // 1 2 3 4 
+    // 1 2 3 4 
+/*
+    int n;
+    cin>>n;
+    int i=1;
+    while (i<=n)
+    {
+        int j=1;
+        while (j<=n)
+        {
+            cout<<j;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/
+
+    // ******** Pattern 2 *******
+    // 4 3 2 1 
+    // 4 3 2 1 
+    // 4 3 2 1 
+    // 4 3 2 1 
+/*
+    int n;
+    cin>>n;
+    int i=1;
+    while (i<=n)
+    {
+        int j=1;
+        while (j<=n)
+        {
+            cout<<n-j+1;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/    
+
+// ******** Pattern 3 *******
+    // 1 2 3 4
+    // 5 6 7 8 
+    // 9 10 11 12 
+    // 13 14 15 16
+/*
+    int n;
+    cin>>n;
+    int i = 1;
+    int count = 1;
+    while (i<=n)
+    {
+        int j = 1;
+        while (j<=n)
+        {
+            cout<<count<<" ";
+            count++;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/  
+
+// ******** Pattern 4 *******
+    // *
+    // * *
+    // * * *
+    // * * * *
+/*    
+    int n;
+    cin>>n;
+    int i = 1;
+    while (i<=n)
+    {
+        int j = 1;
+        while(j<=i)
+        { 
+         cout<<" * "<<" ";
+         j++;
+        }
+     cout<<endl;
+     i++;
+    }
+*/
+
+// ******** Pattern 5 *******
+    // 1
+    // 2 2
+    // 3 3 3
+    // 4 4 4 4 
+/*    
+    int n ;
+    cin>>n;
+    int i = 1;
+    while (i<=n)
+    {
+        int j = 1;
+        while (j<=i)
+        {
+            cout<<i<<" ";
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/    
+
+// ******** Pattern 6 *******
+    // 1
+    // 2 3
+    // 4 5 6 
+    // 7 8 9 10
+/*
+    int n ;
+    cin>>n;
+    int i = 1;
+    int count = 1;
+    while (i<=n)
+    {
+        int j = 1;
+        while (j<=i)
+        {
+            cout<<count<<" ";
+            count++;
+            j++;
+        }
+        cout<<endl;
+        i++;
+    }
+*/    
+
+// ******** Pattern 7 *******
+//   1
+//   2 1
+//   3 2 1
+//   4 3 2 1
+/*   
+   int n;
+   cin>>n;
+   int i = 1;
+   while (i<=n)
+   {
+       int j = 1;
+       while (j<=i)
+       {
+           cout<<i-j+1<<" ";
+           j++;
+       }
+       cout<<endl;
+       i++;
+   }
+*/   
+
+// ******** Pattern 8 *******
+//   A A A
+//   B B B
+//   C C C
+//   D D D
+/* 
+ int n ;
+ cin>>n;
+ int i = 1;
+ char ch = 'A';
+ while (i<=n)
+ {
+     int j = 1;
+     while (j<=n)
+     {
+         cout<<ch;
+         j++;
+     }
+     ch++;
+     cout<<endl;
+     i++;
+ }
+*/ 
+
+// ******** Pattern 9 *******
+//   A B C
+//   A B C
+//   A B C
+/*
+ int n;
+ cin>>n;
+ int i = 1;
+ while (i<=n)
+ {
+    int j = 1;
+    while (j<=n)
+    {
+        char t = 'A'+ j - 1;
+        cout<<t<<" ";
+        j++;
+    }
+    cout<<endl;
+    i++;
+ }
+*/
+
+// ******** Pattern 10 *******
+//   A B C
+//   D E F 
+//   G H I 
+/*
+ int n;
+ cin>>n;
+ int i = 1;
+ char ch = 'A';
+ while (i<=n)
+ {
+    int j = 1;
+    while (j<=n)
+    {
+    cout<<ch<<" ";
+    ch++;
+    j++;
+    }
+ cout<<endl;
+ i++;
+ }
+*/
+
+// ******** Pattern 11 *******
+//   A B C
+//   B C D
+//   C D E
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int j = 1;
+    while(j<=n)
+{
+    char ch = 'A'+i+j-2;
+    cout<<ch<<" ";
+    j++;
+}
+cout<<endl;
+i++;
+}
+*/
+
+// ******** Pattern 11 *******
+//   A 
+//   B B
+//   C C C 
+//   D D D D
+/*
+  int n;
+  cin>>n;
+  int i = 1;
+  char ch = 'A';
+  while (i<=n)
+  {
+      int j = 1;
+      while (j<=i)
+      {
+          cout<<ch<<" ";
+          j++;
+      }
+      ch++;
+      cout<<endl;
+      i++;
+  }
+*/
+
+// ******** Pattern 12 *******
+//   A 
+//   B C
+//   C D E
+//   D E F G
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int j = 1;
+    while (j<=i)
+    {
+        char ch =('A'+ i + j - 2);
+        cout<<ch<<" ";
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 13 *******
+//   D 
+//   C D 
+//   B C D 
+//   A B C D
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int j = 1;
+    char ch ='A'+n-i;
+    while (j<=i)
+    {
+        cout<<ch<<" ";
+        ch++;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 14 *******
+//         *
+//       * *
+//     * * *
+//   * * * *
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    // space print
+    int space = n-i;
+    while (space)
+    {
+        cout<<" ";
+        space--;
+    }
+    // stars print
+    int j = 1;
+    while (j<=i)
+    {
+        cout<<"*";
+        j++;
+    }
+cout<<endl;
+i++;   
+}
+*/
+
+// ******** Pattern 15 *******
+//   * * * * 
+//     * * *
+//       * *
+//         *
+/*
+int n;
+cin>>n;
+
+    int i=1;
+while(i<=n)
+   {
+    int space=i-1;
+    while(space){
+        cout<<" ";
+        space=space-1;
+    }
+    int j=i;
+    while(j<=n){
+        cout<<"*";
+        j++;
+    }
+    cout<<endl;
+    i++;
+    }
+*/
+
+// ******** Pattern 16 *******
+//   * * * * 
+//   * * *  
+//   * *  
+//   *
+/*
+int n;
+    cin>>n;
+    int i = 1;
+    while (i<= n)
+    {
+        int j = 1;
+        while (j <= n-i+1)
+        {
+            cout << "*";
+            j++;
+        }
+        cout << endl;
+        i++;
+    }
+*/
+
+// ******** Pattern 17 *******
+// 1 1 1 1 
+//   2 2 2 
+//     3 3 
+//       4
+/*
+    int n;
+cin>>n;
+    int i=1;
+while(i<=n)
+{
+    int space=i-1;
+    while(space)
+    {
+        cout<<" ";
+        space=space-1;
+    }
+    int j=i;
+    while(j<=n)
+    {
+        cout<<i;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 18 *******
+//         1
+//       2 2
+//     3 3 3
+//   4 4 4 4
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int space =n-i;
+    while (space)
+    {
+        cout<<" ";
+        space--;
+    }
+    int j = 1;
+    while (j<=i)
+    {
+        cout<<i;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 19 *******
+// 1 2 3 4
+//   2 3 4
+//     3 4 
+//       4
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int space = i-1;
+    while (space)
+    {
+        cout<<" ";
+        space--;
+    }
+    int j = i;
+    while (j<=n)
+    {
+        cout<<j;
+        j++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 20 *******
+//       1
+//     2 3
+//   4 5 6 
+// 7 8 9 10  
+/*
+int n;
+cin>>n;
+int i =1;
+int count =1;       
+while (i<=n)
+{
+    int space = n-i;
+    while(space)
+    {
+        cout<<" ";
+        space--;
+    }
+    int j= 1;
+    while (j<=i)
+    {
+        cout<<count;
+        j++;
+        count++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 21 *******
+//       1
+//     1 2 1
+//   1 2 3 2 1
+// 1 2 3 4 3 2 1
+/*
+int n;
+cin>>n;
+int i = 1;
+while (i<=n)
+{
+    int space = n-i;
+    while(space)
+    {
+    cout<<" ";
+    space--;
+    }
+    int j=1;
+    while (j<=i)
+    {
+        cout<<j;
+        j++;
+    }
+    int k=i-1;
+    while (k)
+    {
+        cout<<k;
+        k--;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+
+// ******** Pattern 22 *******
+// 1 2 3 4 5 5 4 3 2 1 
+// 1 2 3 4 * * 4 3 2 1
+// 1 2 3 * * * * 3 2 1
+// 1 2 * * * * * * 2 1
+// 1 * * * * * * * * 1
+/*
+int n;
+cin>>n;
+int i =1;
+while (i<=n)
+{
+    int j=1;
+    while (j<= n-i+1)
+    {
+        cout<<j;
+        j++;
+    }
+    int space= i-1;
+    while (space)
+    {
+        cout<<"*";
+        space--;
+    }
+    int sec_space= i-1 ;
+    while (sec_space)
+    {
+        cout<<"*";
+        sec_space--;
+    }
+    int j_2=i;
+    while (j_2<=n)
+    {
+        cout<<n-j_2+1;
+        j_2++;
+    }
+    cout<<endl;
+    i++;
+}
+*/
+    return 0;
+}
